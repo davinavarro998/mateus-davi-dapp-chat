@@ -1,0 +1,21 @@
+.addFriendMain{
+    height: 80vh;
+    display: flex;
+    
+    justify-content: space-around ;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pendingRequestsSection h1{
+    color: #4660e6;
+    
+}
+.pendingRequestsSection{
+    
+}
+.pendingRequestList{
+    margin-top: 50px;
+    max-height: 300px;
+    overflow-y: auto;
+}

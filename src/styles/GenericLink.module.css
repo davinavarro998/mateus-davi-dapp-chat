@@ -1,0 +1,8 @@
+.genericLink{
+    text-decoration: none;
+    font-size: 20px;
+    color: #4699e6;
+}
+.genericLink:hover{
+    text-decoration: underline;
+}

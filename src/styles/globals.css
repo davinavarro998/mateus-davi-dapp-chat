@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+html,body {
+  
+  height: 100vh;
+  background-color: #0d131f;
+  color: #fff;
+  height: 100%;
+
+}
+::-webkit-scrollbar {
+  width: 0.7em;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #010409;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4660e6;
+  border-radius: 10px;
+}

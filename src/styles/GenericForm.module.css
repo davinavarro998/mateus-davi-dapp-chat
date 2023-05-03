@@ -1,0 +1,34 @@
+.genericForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+.genericForm input {
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.genericForm button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.genericForm img {
+    width: 30%;
+}
+.genericForm p{
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 100%;
+    color: #4660e6;
+    margin-top: 30px;
+}

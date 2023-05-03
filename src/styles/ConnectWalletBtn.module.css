@@ -1,0 +1,37 @@
+.btn {
+    display: flex;
+    width: 100%;
+    max-width: max-content;
+    align-items: center;
+    padding: 10px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: #4660e6;
+    color: #fff;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transition: all 0.2s;
+}
+.btn:hover{
+    background-color: #5670f3;
+}
+.btn h3{
+    padding: 10px;
+    font-size: 22px;
+    
+
+}
+
+.btn img {
+    display: block;
+    width: 100%;
+
+    width: 70px;
+}
+
+@media screen and (max-width:322px) {
+    .btn{
+        justify-content: center;
+    }
+
+}

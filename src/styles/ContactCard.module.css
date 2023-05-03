@@ -1,0 +1,45 @@
+.contactCard {
+    padding: 8px;
+    background-color: #373c49;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+
+.contactCard:hover {
+    background-color: #272b33;
+}
+
+.accept {
+    font-size: 30px;
+    color: #57b53b;
+    cursor: pointer;
+    max-width: fit-content;
+}
+.accept:hover{
+    color: #73e151;
+}
+
+.deny {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ff3333;
+    max-width: fit-content;
+}
+.deny:hover{
+    color: #ff6565;
+}
+.requestCard {
+    padding: 8px;
+    background-color: #373c49;
+    
+    margin-top: 12px;
+    margin-bottom: 12px;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+.vazio{
+    display: none;
+}

@@ -1,0 +1,138 @@
+.ChatLayout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.chatHeader {
+    width: 100%;
+    background-color: #272b33;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    align-items: center;
+
+}
+@media screen and (max-width:940px) {
+    .ChatLayout{
+        
+        width: 100%;
+    }
+}
+ @media screen and (max-width:666px) {
+    .chatHeader {
+        justify-content: center;
+    }
+
+    .chatHeader div {
+        text-align: center;
+    }
+}
+@media screen and (max-width:574px) {
+    .chatHeader p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:510px) {
+    .chatHeader p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:456px) {
+    .chatHeader p {
+        font-size: 11px;
+    }
+} 
+.chatHeader div {
+    padding: 8px;
+}
+
+.chatHeader img {
+    width: 80px;
+}
+
+
+.chatFooter {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: grey;
+    display: flex;
+    background-color: #272b33;
+}
+
+.chatFooter input {
+    padding: 6px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    background-color: #373c49;
+    color: #fff;
+    font-size: 24px;
+}
+
+.chatFooter button {
+    padding: 10px;
+    font-size: 24px;
+    background-color: #272b33;
+    border-style: none;
+    color: #4660e6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.chatFooter button:hover {
+    background-color: #373c49;
+    color: #506bf0;
+}
+
+.chatBox {
+    width: 100%;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #010409;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 495.63px;
+}
+
+.userMessage {
+    padding: 9px;
+    background-color: #57b53b;
+    max-width: fit-content;
+    margin-left: auto;
+    border-radius: 10px 10px 0px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 20rem;
+    color: #010409;
+    width: fit-content;
+
+}
+
+.receivedMessage {
+    padding: 9px;
+    max-width: 20rem;
+    width: fit-content;
+    background-color: #7b90a6;
+    border-radius: 10px 10px 10px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #010409;
+}
+.textContent{
+    font-weight: bold;
+}

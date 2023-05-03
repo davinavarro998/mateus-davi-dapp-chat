@@ -1,0 +1,11 @@
+.contactsList {
+    height: 100%;
+    overflow-y: auto;
+    max-height: 76vh;
+}
+.yourContacts{
+    color: #4660e6;
+    text-align: center;
+    padding: 10px;
+    
+}

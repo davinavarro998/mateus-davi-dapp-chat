@@ -1,0 +1,28 @@
+.chatSection{
+
+    
+    
+    min-height: 84vh;
+    display: flex;
+    
+}
+.errorPage{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactsContainer{
+    padding: 5px;
+    min-height: 100%;
+    max-width: 22vw;
+    width: 100%;
+}
+.chatContainer{
+    background-color:#272b33 ;
+    width: 100%;
+    max-width: 78vw;
+    
+    padding: 4px;    
+}
