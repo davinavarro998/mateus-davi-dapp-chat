@@ -66,7 +66,7 @@ const Chat = () => {
 
 
         async function listenToMessageSentEvent() {
-            getDecentralizedChat().events.MessageSent({}, (error, event) => {
+            getDecentralizedChat().events.MessageSent({filter:{to:account}}, (error, event) => {
                 if (!error && event.returnValues) {
                     const newMessage = {
                         sender: event.returnValues.from,
@@ -75,7 +75,7 @@ const Chat = () => {
                         to: event.returnValues.to,
                     };
 
-                    console.log(contact)
+                    
                     setChatLog((prevChatLog) => [...prevChatLog, newMessage]);
 
 
@@ -128,18 +128,14 @@ const Chat = () => {
             try {
                 const tx = await sendMessage(account, contact.accountAddress, messageInput)
                 setMessageInput("")
-
-                /* 
-                                const chatMessage = {
-                                    sender: tx.events.MessageSent.returnValues.from,
-                                    _msg: tx.events.MessageSent.returnValues.message,
-                                    timestamp: tx.events.MessageSent.returnValues.timestamp,
-                                    to: tx.events.MessageSent.returnValues.to
-                                };
-                                if (chatMessage.to.toLowerCase() === contact.accountAddress.toLowerCase()) {
-                
-                                    setChatLog(prevChatLog => [...prevChatLog, chatMessage]);
-                                } */
+                const chatMessage = {
+                    sender: tx.events.MessageSent.returnValues.from,
+                    _msg: tx.events.MessageSent.returnValues.message,
+                    timestamp: tx.events.MessageSent.returnValues.timestamp,
+                    to: tx.events.MessageSent.returnValues.to
+                };
+                setChatLog(prevChatLog => [...prevChatLog, chatMessage]);
+               
             } catch (error) {
 
                 console.log(error)
